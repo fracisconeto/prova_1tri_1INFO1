@@ -7,11 +7,13 @@
     */
 
     //ENTRADA
-
+    const racao = Number(prompt(`quantos grama de racao ele come por dia?`));
 
     //PROCESSAMENTO
-
+    const semana = racao * 6;
+    const porcento = racao * 30 / 100;
+    const final = semana + porcento
 
     //SAÍDA
-
+    document.write(`seu cachoro como ${final}gramas de racao por semana.`);
 </script>

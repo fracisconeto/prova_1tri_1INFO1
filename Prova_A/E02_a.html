@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
-
+    const preco1 = Number(prompt(`qual e o preco da combustível no primeiro posto`));
+    const preco2 = Number(prompt(`qual e o preco da combustível no segundo posto`));
+    const preco3 = Number(prompt(`qual e o preco da combustível no terceiro posto`));
     //PROCESSAMENTO
-
-
+    const media1 = preco1 + preco2 + preco3;
+    const mediafinal = Math.ceil(media1 / 3)
     //SAÍDA
-
+    document.write(`o preco medio do combustivel  e de ${mediafinal}.`);
 </script>

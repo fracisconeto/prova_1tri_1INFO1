@@ -1,16 +1,22 @@
 <script>
     /*
     PROBLEMA: Média ponderada
-    Um aluno realizou três atividades avaliativas durante o trimestre, sendo que cada uma possuía seu peso específico. Os pesos das atividades são, respectivamente, 7, 2 e 1.
-    Peça para o usuário informar qual a nota que obteve em cada atividade e calcule a nota final do trimestre. Ao final do programa apresente a média obtida pelo aluno.
+    Um aluno realizou três atividades avaliativas durante o trimestre, sendo que cada uma possuía seu peso específico. Os pesos das atividades são,
+    respectivamente, 7, 2 e 1.
+    Peça para o usuário informar qual a nota que obteve em cada atividade e calcule a nota final do trimestre. Ao final do programa apresente a
+     média obtida pelo aluno.
     */
 
-    //ENTRADA
-
-
+    //ENTRADA;
+    const media7 = Number(prompt(`ensira a nota da avaliacao com peso de 7`));
+    const media2 = Number(prompt(`ensira a nota da avaliacao com peso de 2`));
+    const media1 = Number(prompt(`ensria a nota da avaliacao com peso de 1`))
     //PROCESSAMENTO
-
-
+    const media8 = media7 * 7;
+    const media3 = media2 * 2;
+    const media0 = media1 * 1;
+    const mediafinal = media8 + media3 + media0;
+    const final = Math.ceil(mediafinal / 10);
     //SAÍDA
-
+    document.write(`a sua media sera de ${final}.`)
 </script>
